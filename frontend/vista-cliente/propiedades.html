@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Rent Solution | Propiedades</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="menu-principal">
+        <div class="contenedor menu-barra">
+
+            <a class="marca" href="index.html">
+                <span aria-hidden="true">&#127968;</span> Home Rent Solution
+            </a>
+
+            <nav class="menu-nav">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="activo" href="propiedades.html">Propiedades</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="menu-acciones">
+                    <a class="boton boton-borde" href="reservas.html">
+                        Mis reservas <span class="insignia">2</span>
+                    </a>
+                    <a class="boton boton-principal" href="login.html">Ingresar</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== TÍTULO DE LA PÁGINA ===== -->
+        <section class="contenedor seccion">
+
+            <h1 class="titulo">Propiedades disponibles</h1>
+            <p class="subtitulo">9 propiedades publicadas en todo Chile.</p>
+
+            <!-- ===== FILTROS ===== -->
+            <form class="filtros">
+
+                <div class="campo">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="search" id="ubicacion" name="ubicacion" placeholder="Ej: Valparaíso">
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de propiedad</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Todas</option>
+                        <option value="departamento">Departamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="cabania">Cabaña</option>
+                        <option value="loft">Loft</option>
+                        <option value="parcela">Parcela</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="precio-min">Precio desde</label>
+                    <input type="number" id="precio-min" name="precio-min" placeholder="0">
+                </div>
+
+                <div class="campo">
+                    <label for="precio-max">Precio hasta</label>
+                    <input type="number" id="precio-max" name="precio-max" placeholder="200000">
+                </div>
+
+                <button type="submit" class="boton boton-principal">Filtrar</button>
+
+            </form>
+
+            <!-- ===== LISTADO DE PROPIEDADES ===== -->
+            <div class="grilla">
+
+                <!-- Propiedad 1 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-1.avif"
+                         alt="Departamento con balcón y vista al mar">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Departamento</span>
+                        <h2>Departamento con vista al mar</h2>
+                        <p class="ubicacion">Viña del Mar, Valparaíso</p>
+                        <p class="precio">$68.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 2 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-2.avif"
+                         alt="Casa de dos pisos con antejardín">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Casa</span>
+                        <h2>Casa familiar en barrio residencial</h2>
+                        <p class="ubicacion">Ñuñoa, Santiago</p>
+                        <p class="precio">$92.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 3 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-3.avif"
+                         alt="Cabaña de madera rodeada de bosque">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Cabaña</span>
+                        <h2>Cabaña de montaña con tinaja</h2>
+                        <p class="ubicacion">Pucón, La Araucanía</p>
+                        <p class="precio">$75.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 4 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-4.avif"
+                         alt="Loft de diseño con escritorio de trabajo">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Loft</span>
+                        <h2>Loft céntrico para profesionales</h2>
+                        <p class="ubicacion">Providencia, Santiago</p>
+                        <p class="precio">$54.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 5 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-5.avif"
+                         alt="Living amplio con ventanal hacia el mar">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Casa</span>
+                        <h2>Casa de playa con acceso privado</h2>
+                        <p class="ubicacion">Algarrobo, Valparaíso</p>
+                        <p class="precio">$110.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 6 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-6.avif"
+                         alt="Cabaña a orillas de un lago">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Cabaña</span>
+                        <h2>Cabaña frente al lago</h2>
+                        <p class="ubicacion">Puerto Varas, Los Lagos</p>
+                        <p class="precio">$79.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 7 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-7.avif"
+                         alt="Casa de campo restaurada entre viñedos">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Parcela</span>
+                        <h2>Parcela con casa de adobe restaurada</h2>
+                        <p class="ubicacion">Santa Cruz, O'Higgins</p>
+                        <p class="precio">$86.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 8 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-8.avif"
+                         alt="Departamento amoblado en el centro de la ciudad">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Departamento</span>
+                        <h2>Departamento amoblado en el centro</h2>
+                        <p class="ubicacion">Concepción, Biobío</p>
+                        <p class="precio">$48.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Propiedad 9 -->
+                <article class="tarjeta">
+                    <img src="../homerentsolution-frontend/assets/img/img-tarjeta-9.avif"
+                         alt="Casa con cocina equipada y comedor integrado">
+                    <div class="tarjeta-cuerpo">
+                        <span class="etiqueta">Casa</span>
+                        <h2>Casa con patio en barrio tradicional</h2>
+                        <p class="ubicacion">La Serena, Coquimbo</p>
+                        <p class="precio">$64.000 <span class="por-noche">por noche</span></p>
+                        <a class="boton boton-principal boton-ancho" href="detalle-propiedad.html">Ver detalle</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- ===== PAGINACIÓN ===== -->
+            <nav class="paginacion" aria-label="Paginación del listado">
+                <a class="pagina activa" href="propiedades.html">1</a>
+                <a class="pagina" href="propiedades.html">2</a>
+                <a class="pagina" href="propiedades.html">3</a>
+                <a class="pagina" href="propiedades.html">Siguiente</a>
+            </nav>
+
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor">
+
+            <div class="pie-columnas">
+
+                <div class="pie-columna pie-ancha">
+                    <h4>Home Rent Solution</h4>
+                    <p class="texto-chico">
+                        Plataforma chilena de arriendo de propiedades por períodos determinados.
+                    </p>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Navegación</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Contacto</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li>Av. Irarrázaval 2450, Ñuñoa</li>
+                        <li>+56 2 2555 1000</li>
+                        <li><a href="mailto:contacto@homerentsolution.cl">contacto@homerentsolution.cl</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="creditos">
+                &copy; 2026 Home Rent Solution &middot; DSY1104 Desarrollo Full Stack II
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
