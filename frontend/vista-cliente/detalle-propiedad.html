@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Rent Solution | Departamento con vista al mar</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="menu-principal">
+        <div class="contenedor menu-barra">
+
+            <a class="marca" href="index.html">
+                <span aria-hidden="true">&#127968;</span> Home Rent Solution
+            </a>
+
+            <nav class="menu-nav">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="activo" href="propiedades.html">Propiedades</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="menu-acciones">
+                    <a class="boton boton-borde" href="reservas.html">
+                        Mis reservas <span class="insignia">2</span>
+                    </a>
+                    <a class="boton boton-principal" href="login.html">Ingresar</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contenedor seccion">
+
+            <!-- ===== RUTA DE NAVEGACIÓN ===== -->
+            <nav class="ruta" aria-label="Ruta de navegación">
+                <a href="index.html">Inicio</a> &rsaquo;
+                <a href="propiedades.html">Propiedades</a> &rsaquo;
+                <span>Departamento con vista al mar</span>
+            </nav>
+
+            <div class="detalle">
+
+                <!-- ===== COLUMNA PRINCIPAL ===== -->
+                <div class="detalle-principal">
+
+                    <img class="detalle-imagen"
+                         src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=70"
+                         alt="Departamento con balcón y vista al mar">
+
+                    <span class="etiqueta">Departamento</span>
+                    <h1 class="titulo">Departamento con vista al mar</h1>
+                    <p class="ubicacion">Viña del Mar, Valparaíso</p>
+
+                    <p>
+                        Departamento luminoso a tres cuadras de la playa, con balcón orientado al
+                        poniente y estacionamiento incluido. Ideal para una familia pequeña o una
+                        pareja que busque tranquilidad sin alejarse del centro.
+                    </p>
+
+                    <p>
+                        El edificio cuenta con conserjería las 24 horas, piscina en el último piso
+                        y acceso directo a la costanera. A cinco minutos caminando hay supermercado,
+                        farmacia y paradero de locomoción.
+                    </p>
+
+                    <h2 class="titulo-menor">Características</h2>
+                    <ul class="lista-datos">
+                        <li><strong>Capacidad:</strong> hasta 4 personas</li>
+                        <li><strong>Habitaciones:</strong> 2</li>
+                        <li><strong>Baños:</strong> 1</li>
+                        <li><strong>Superficie:</strong> 68 m²</li>
+                        <li><strong>Código interno:</strong> PROP-001</li>
+                    </ul>
+
+                    <h2 class="titulo-menor">Servicios incluidos</h2>
+                    <ul class="lista-datos">
+                        <li>WiFi de fibra óptica</li>
+                        <li>Estacionamiento privado</li>
+                        <li>Cocina equipada</li>
+                        <li>Ropa de cama y toallas</li>
+                        <li>Acceso a piscina</li>
+                    </ul>
+
+                    <h2 class="titulo-menor">Normas de la propiedad</h2>
+                    <ul class="lista-datos">
+                        <li>Llegada desde las 15:00 horas</li>
+                        <li>Salida hasta las 12:00 horas</li>
+                        <li>No se permiten fiestas ni eventos</li>
+                        <li>No se admiten mascotas</li>
+                    </ul>
+
+                </div>
+
+                <!-- ===== PANEL DE RESERVA ===== -->
+                <aside class="panel-reserva">
+
+                    <p class="precio-grande">$68.000</p>
+                    <p class="texto-chico por-noche">por noche</p>
+
+                    <p class="aviso-disponibilidad">Quedan 3 fechas disponibles</p>
+
+                    <form>
+
+                        <div class="campo">
+                            <label for="llegada">Llegada</label>
+                            <input type="date" id="llegada" name="llegada">
+                        </div>
+
+                        <div class="campo">
+                            <label for="salida">Salida</label>
+                            <input type="date" id="salida" name="salida">
+                        </div>
+
+                        <div class="campo">
+                            <label for="huespedes">Huéspedes</label>
+                            <select id="huespedes" name="huespedes">
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                            </select>
+                        </div>
+
+                        <div class="resumen">
+                            <p><span>$68.000 x 4 noches</span> <span>$272.000</span></p>
+                            <p><span>Comisión de servicio</span> <span>$13.600</span></p>
+                            <p class="resumen-total"><span>Total</span> <span>$285.600</span></p>
+                        </div>
+
+                        <button type="submit" class="boton boton-principal boton-ancho">
+                            Agregar a mis reservas
+                        </button>
+
+                    </form>
+
+                    <p class="texto-chico centrado nota">
+                        No se te cobrará nada por ahora.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor">
+
+            <div class="pie-columnas">
+
+                <div class="pie-columna pie-ancha">
+                    <h4>Home Rent Solution</h4>
+                    <p class="texto-chico">
+                        Plataforma chilena de arriendo de propiedades por períodos determinados.
+                    </p>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Navegación</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Contacto</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li>Av. Irarrázaval 2450, Ñuñoa</li>
+                        <li>+56 2 2555 1000</li>
+                        <li><a href="mailto:contacto@homerentsolution.cl">contacto@homerentsolution.cl</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="creditos">
+                &copy; 2026 Home Rent Solution &middot; DSY1104 Desarrollo Full Stack II
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
