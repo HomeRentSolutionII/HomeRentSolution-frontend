@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Rent Solution | Mis reservas</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="menu-principal">
+        <div class="contenedor menu-barra">
+
+            <a class="marca" href="index.html">
+                <span aria-hidden="true">&#127968;</span> Home Rent Solution
+            </a>
+
+            <nav class="menu-nav">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="propiedades.html">Propiedades</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="menu-acciones">
+                    <a class="boton boton-borde activo" href="reservas.html">
+                        Mis reservas <span class="insignia">2</span>
+                    </a>
+                    <a class="boton boton-principal" href="login.html">Ingresar</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contenedor seccion">
+
+            <h1 class="titulo">Mis reservas</h1>
+            <p class="subtitulo">Revisa las propiedades y fechas que seleccionaste antes de confirmar.</p>
+
+            <div class="detalle">
+
+                <!-- ===== LISTADO DE LO SELECCIONADO ===== -->
+                <div class="detalle-principal">
+
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Propiedad</th>
+                                <th>Fechas</th>
+                                <th class="celda-centro">Noches</th>
+                                <th class="celda-derecha">Por noche</th>
+                                <th class="celda-derecha">Subtotal</th>
+                                <th class="celda-centro">Quitar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <img class="miniatura"
+                                         src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=200&q=70"
+                                         alt="Departamento con vista al mar">
+                                    <strong>Departamento con vista al mar</strong>
+                                    <span class="texto-chico ubicacion">Viña del Mar, Valparaíso</span>
+                                </td>
+                                <td class="texto-chico">03-10-2026<br>al 07-10-2026</td>
+                                <td class="celda-centro">4</td>
+                                <td class="celda-derecha">$68.000</td>
+                                <td class="celda-derecha"><strong>$272.000</strong></td>
+                                <td class="celda-centro">
+                                    <a class="quitar" href="reservas.html" title="Quitar de la selección">&times;</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="miniatura"
+                                         src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?auto=format&fit=crop&w=200&q=70"
+                                         alt="Cabaña de montaña con tinaja">
+                                    <strong>Cabaña de montaña con tinaja</strong>
+                                    <span class="texto-chico ubicacion">Pucón, La Araucanía</span>
+                                </td>
+                                <td class="texto-chico">11-10-2026<br>al 14-10-2026</td>
+                                <td class="celda-centro">3</td>
+                                <td class="celda-derecha">$75.000</td>
+                                <td class="celda-derecha"><strong>$225.000</strong></td>
+                                <td class="celda-centro">
+                                    <a class="quitar" href="reservas.html" title="Quitar de la selección">&times;</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <p class="margen-arriba">
+                        <a class="boton boton-oscuro" href="propiedades.html">Seguir buscando</a>
+                    </p>
+
+                </div>
+
+                <!-- ===== RESUMEN ===== -->
+                <aside class="panel-reserva">
+
+                    <h2 class="titulo-menor">Resumen</h2>
+
+                    <div class="resumen">
+                        <p><span>Subtotal (2 propiedades)</span> <span>$497.000</span></p>
+                        <p><span>Comisión de servicio</span> <span>$24.850</span></p>
+                        <p class="resumen-total"><span>Total</span> <span>$521.850</span></p>
+                    </div>
+
+                    <a class="boton boton-principal boton-ancho" href="login.html">Confirmar reserva</a>
+
+                    <p class="texto-chico centrado nota">
+                        Necesitas iniciar sesión para confirmar.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor">
+
+            <div class="pie-columnas">
+
+                <div class="pie-columna pie-ancha">
+                    <h4>Home Rent Solution</h4>
+                    <p class="texto-chico">
+                        Plataforma chilena de arriendo de propiedades por períodos determinados.
+                    </p>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Navegación</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Contacto</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li>Av. Irarrázaval 2450, Ñuñoa</li>
+                        <li>+56 2 2555 1000</li>
+                        <li><a href="mailto:contacto@homerentsolution.cl">contacto@homerentsolution.cl</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="creditos">
+                &copy; 2026 Home Rent Solution &middot; DSY1104 Desarrollo Full Stack II
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
