@@ -20,6 +20,7 @@
      8. Sección "Cómo funciona"
      9. Pie de página
     10. Filtros y paginación
+    11. Nosotros, blog y contacto
    ========================================================================== */
 
 
@@ -469,4 +470,211 @@ body {
     border-color: var(--azul);
     color: #ffffff;
     font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------------------------
+   11. NOSOTROS, BLOG Y CONTACTO
+   Estilos de las páginas de contenido informativo (RF-06). Reutilizan las
+   variables y los componentes de las secciones anteriores.
+   --------------------------------------------------------------------------- */
+
+/* Bajada de página. Se usa en lugar de .subtitulo porque este último tiene
+   el color casi blanco y no se lee sobre fondo blanco. */
+.bajada-pagina {
+    color: var(--gris);
+    margin-bottom: 24px;
+}
+
+/* Columna de lectura: evita líneas demasiado largas en textos corridos */
+.texto-lectura {
+    max-width: 760px;
+}
+
+.texto-lectura p {
+    margin-bottom: 14px;
+}
+
+.espacio-arriba { margin-top: 28px; }
+
+/* --- Nosotros: equipo --- */
+.perfil {
+    text-align: center;
+}
+
+.perfil .tarjeta-cuerpo {
+    align-items: center;
+}
+
+.avatar {
+    background-color: var(--azul);
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.rol {
+    color: var(--verde);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* --- Blog: listado --- */
+.meta-articulo {
+    color: var(--gris);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.extracto {
+    font-size: 0.92rem;
+    margin-bottom: 14px;
+    flex-grow: 1;
+}
+
+/* --- Blog: detalle de publicación --- */
+.articulo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.articulo-imagen {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 18px 0 24px;
+}
+
+.articulo h2 {
+    color: var(--azul);
+    font-size: 1.25rem;
+    margin: 26px 0 8px;
+}
+
+.articulo p {
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.articulo ul {
+    list-style: disc;
+    padding-left: 22px;
+    margin-bottom: 14px;
+}
+
+.articulo li {
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+
+.articulo-pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid var(--borde);
+    margin-top: 32px;
+    padding-top: 20px;
+}
+
+/* --- Contacto --- */
+.contacto-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.formulario {
+    width: calc(66.666% - 12px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--claro);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.formulario .campo input,
+.formulario .campo select,
+.formulario .campo textarea {
+    width: 100%;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.campos-dos {
+    display: flex;
+    gap: 16px;
+}
+
+.campos-dos .campo {
+    flex: 1;
+}
+
+.campo .opcional {
+    color: var(--gris);
+    font-weight: 400;
+}
+
+.campo .error {
+    color: #d1280a;
+    font-size: 0.8rem;
+    min-height: 1.1em;
+}
+
+.campo.invalido input,
+.campo.invalido select,
+.campo.invalido textarea {
+    border-color: #d1280a;
+}
+
+.campo .contador {
+    color: var(--gris);
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.mensaje-exito {
+    display: none;
+    background-color: #e6f4f1;
+    border: 1px solid var(--verde);
+    border-radius: 6px;
+    color: #1f7a6f;
+    font-weight: 600;
+    padding: 12px 14px;
+}
+
+.mensaje-exito.visible {
+    display: block;
+}
+
+.contacto-datos {
+    width: calc(33.333% - 12px);
+}
+
+.contacto-datos li {
+    margin-bottom: 10px;
+}
+
+.contacto-datos strong {
+    display: block;
+    color: var(--azul);
+    font-size: 0.85rem;
+}
+
+.formulario .boton {
+    align-self: flex-start;
 }
