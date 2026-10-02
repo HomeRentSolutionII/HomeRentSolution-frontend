@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Rent Solution | Iniciar sesión</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="menu-principal">
+        <div class="contenedor menu-barra">
+
+            <a class="marca" href="index-main.html">
+                <span aria-hidden="true">&#127968;</span> Home Rent Solution
+            </a>
+
+            <nav class="menu-nav">
+                <ul class="menu-lista">
+                    <li><a href="index-main.html">Inicio</a></li>
+                    <li><a href="propiedades.html">Propiedades</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="menu-acciones">
+                    <a class="boton boton-borde" href="reservas.html">
+                        Mis reservas <span class="insignia">2</span>
+                    </a>
+                    <a class="boton boton-principal activo" href="login.html">Ingresar</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contenedor seccion">
+
+            <div class="caja-formulario caja-angosta">
+
+                <p class="logo-formulario" aria-hidden="true">&#127968;</p>
+                <h1 class="titulo centrado">Iniciar sesión</h1>
+                <p class="subtitulo centrado">Ingresa con tu cuenta para continuar.</p>
+
+                <form class="formulario">
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico <span class="obligatorio">*</span></label>
+                        <input type="email" id="correo" name="correo" maxlength="100" placeholder="nombre@duoc.cl">
+                        <span class="ayuda">Solo @duoc.cl, @profesor.duoc.cl y @gmail.com</span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="clave">Contraseña <span class="obligatorio">*</span></label>
+                        <input type="password" id="clave" name="clave" maxlength="10" placeholder="Entre 4 y 10 caracteres">
+                        <span class="ayuda">Entre 4 y 10 caracteres.</span>
+                    </div>
+
+                    <button type="button" class="boton boton-principal boton-ancho margen-arriba" onclick="location.href='index-adm.html'">Ingresar</button>
+
+                    <p class="texto-chico centrado margen-arriba">
+                        ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor">
+
+            <div class="pie-columnas">
+
+                <div class="pie-columna pie-ancha">
+                    <h4>Home Rent Solution</h4>
+                    <p class="texto-chico">
+                        Plataforma chilena de arriendo de propiedades por períodos determinados.
+                    </p>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Navegación</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h4>Contacto</h4>
+                    <ul class="lista-limpia texto-chico">
+                        <li>Av. Irarrázaval 2450, Ñuñoa</li>
+                        <li>+56 2 2555 1000</li>
+                        <li><a href="mailto:contacto@homerentsolution.cl">contacto@homerentsolution.cl</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="creditos">
+                &copy; 2026 Home Rent Solution &middot; DSY1104 Desarrollo Full Stack II
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

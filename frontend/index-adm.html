@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Noemi</title>
+    <link rel="stylesheet" href="assets/css/estilos-adm.css">
+</head>
+<body>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="logo">Panel Admin</div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a onclick="showPage('home', event)">
+                        <span>📊</span>
+                        <span>Home Admin</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="showPage('propiedades', event)">
+                        <span>🏠</span>
+                        <span>Propiedades</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="showPage('propiedad-form', event)">
+                        <span>➕</span>
+                        <span>Nueva Propiedad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="showPage('usuarios', event)">
+                        <span>👥</span>
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="showPage('usuario-form', event)">
+                        <span>➕</span>
+                        <span>Nuevo Usuario</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="header">
+                <h1 id="page-title">Home Admin</h1>
+                <div class="user-info">
+                    <span>Noemi</span>
+                    <div class="avatar">N</div>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- PAGE 1: HOME ADMIN -->
+                <div id="home" class="page active">
+                    <div class="stats-grid">
+                        <div class="stat-card blue">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Propiedades Activas</div>
+                        </div>
+                        <div class="stat-card green">
+                            <div class="stat-number">156</div>
+                            <div class="stat-label">Reservas Totales</div>
+                        </div>
+                        <div class="stat-card orange">
+                            <div class="stat-number">42</div>
+                            <div class="stat-label">Usuarios Registrados</div>
+                        </div>
+                        <div class="stat-card red">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Contactos sin Responder</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="section-title">Actividad Reciente</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Usuario</th>
+                                    <th>Acción</th>
+                                    <th>Propiedad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/09/2026</td>
+                                    <td>Carlos M.</td>
+                                    <td><span class="badge active">Nueva Reserva</span></td>
+                                    <td>Departamento Centro</td>
+                                </tr>
+                                <tr>
+                                    <td>24/09/2026</td>
+                                    <td>María L.</td>
+                                    <td><span class="badge active">Registro</span></td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>23/09/2026</td>
+                                    <td>Admin</td>
+                                    <td><span class="badge active">Nueva Propiedad</span></td>
+                                    <td>Casa Vista al Mar</td>
+                                </tr>
+                                <tr>
+                                    <td>22/09/2026</td>
+                                    <td>Roberto S.</td>
+                                    <td><span class="badge inactive">Reserva Cancelada</span></td>
+                                    <td>Departamento Norte</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- PAGE 2: LISTADO PROPIEDADES -->
+                <div id="propiedades" class="page">
+                    <div class="card">
+                        <div class="section-title">Gestión de Propiedades</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Ubicación</th>
+                                    <th>Precio</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#001</td>
+                                    <td>Departamento Centro</td>
+                                    <td>Centro, Santiago</td>
+                                    <td>$150.000</td>
+                                    <td><span class="badge active">Disponible</span></td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('propiedad-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#002</td>
+                                    <td>Casa Vista al Mar</td>
+                                    <td>Viña del Mar</td>
+                                    <td>$350.000</td>
+                                    <td><span class="badge active">Disponible</span></td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('propiedad-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#003</td>
+                                    <td>Departamento Norte</td>
+                                    <td>Las Condes</td>
+                                    <td>$200.000</td>
+                                    <td><span class="badge inactive">Ocupada</span></td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('propiedad-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#004</td>
+                                    <td>Cabaña Cordillera</td>
+                                    <td>San Martín de los Andes</td>
+                                    <td>$180.000</td>
+                                    <td><span class="badge active">Disponible</span></td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('propiedad-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- PAGE 3: FORMULARIO PROPIEDAD -->
+                <div id="propiedad-form" class="page">
+                    <div class="card">
+                        <div class="section-title">Crear / Editar Propiedad</div>
+                        
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nombre de la Propiedad *</label>
+                                    <input type="text" placeholder="Ej: Departamento Centro" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo de Propiedad *</label>
+                                    <select required>
+                                        <option value="">Seleccionar tipo...</option>
+                                        <option value="depto">Departamento</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="cabania">Cabaña</option>
+                                        <option value="villa">Villa</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Ubicación *</label>
+                                    <input type="text" placeholder="Ej: Centro, Santiago" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Precio por Noche *</label>
+                                    <input type="number" placeholder="Ej: 150000" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Cantidad de Habitaciones</label>
+                                    <input type="number" placeholder="Ej: 2" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label>Cantidad de Baños</label>
+                                    <input type="number" placeholder="Ej: 1" min="1">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Descripción</label>
+                                <textarea placeholder="Descripción detallada de la propiedad..."></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>URL Imagen Principal</label>
+                                    <input type="text" placeholder="https://...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado *</label>
+                                    <select required>
+                                        <option value="disponible">Disponible</option>
+                                        <option value="ocupada">Ocupada</option>
+                                        <option value="mantenimiento">En Mantenimiento</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="button-group">
+                                <button type="submit" class="btn-primary">Guardar Propiedad</button>
+                                <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- PAGE 4: LISTADO USUARIOS -->
+                <div id="usuarios" class="page">
+                    <div class="card">
+                        <div class="section-title">Gestión de Usuarios</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Teléfono</th>
+                                    <th>Fecha Registro</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#U001</td>
+                                    <td>Carlos Martínez</td>
+                                    <td>carlos@example.com</td>
+                                    <td>+56 9 1234 5678</td>
+                                    <td>15/08/2026</td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('usuario-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#U002</td>
+                                    <td>María López</td>
+                                    <td>maria@example.com</td>
+                                    <td>+56 9 8765 4321</td>
+                                    <td>22/08/2026</td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('usuario-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#U003</td>
+                                    <td>Roberto Silva</td>
+                                    <td>roberto@example.com</td>
+                                    <td>+56 9 5555 2222</td>
+                                    <td>30/08/2026</td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('usuario-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#U004</td>
+                                    <td>Andreina González</td>
+                                    <td>andreina@example.com</td>
+                                    <td>+56 9 3333 7777</td>
+                                    <td>05/09/2026</td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn-small btn-edit" onclick="showPage('usuario-form', event)">Editar</button>
+                                            <button class="btn-small btn-delete">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- PAGE 5: FORMULARIO USUARIO -->
+                <div id="usuario-form" class="page">
+                    <div class="card">
+                        <div class="section-title">Crear / Editar Usuario</div>
+                        
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nombre Completo *</label>
+                                    <input type="text" placeholder="Ej: Carlos Martínez" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email *</label>
+                                    <input type="email" placeholder="Ej: carlos@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Teléfono</label>
+                                    <input type="tel" placeholder="Ej: +56 9 1234 5678">
+                                </div>
+                                <div class="form-group">
+                                    <label>Documento de Identidad *</label>
+                                    <input type="text" placeholder="Ej: 12345678-9" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Contraseña *</label>
+                                    <input type="password" placeholder="••••••••" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirmar Contraseña *</label>
+                                    <input type="password" placeholder="••••••••" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Rol *</label>
+                                    <select required>
+                                        <option value="">Seleccionar rol...</option>
+                                        <option value="usuario">Usuario Regular</option>
+                                        <option value="propietario">Propietario</option>
+                                        <option value="admin">Administrador</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Fecha de Registro</label>
+                                    <input type="date" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Dirección</label>
+                                <textarea placeholder="Dirección completa del usuario..."></textarea>
+                            </div>
+
+                            <div class="button-group">
+                                <button type="submit" class="btn-primary">Guardar Usuario</button>
+                                <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
