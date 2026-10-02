@@ -21,7 +21,7 @@ No necesita instalación ni servidor.
 
 ## Estructura
 
-
+~~~
 HomeRentSolution-frontend/
 ├── docs/
 │   ├── ERS - Home Rent Solution - v1.1.docx
@@ -47,7 +47,7 @@ HomeRentSolution-frontend/
     ├── detalle-blog-2.html
     ├── contacto.html
     └── index-adm.html               Panel de administración
-
+~~~
 
 ## Vistas
 
